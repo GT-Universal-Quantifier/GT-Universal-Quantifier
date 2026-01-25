@@ -9,7 +9,7 @@ We are aiming for every mechanic, recipe and feature to feel grounded, justified
 > The goal is believability, progression, and consequence.
 
 ## Goals & Purposes
-The primary goal of GT: Universal Quantifier is to pursue the maximum level of realism that is practically achievable within Modded Minecraft including micro-mechanics like torches needs to be lit before using them.
+The primary goal of GT: Universal Quantifier is to pursue the maximum level of accurate realism that is practically possible within Modded Minecraft including micro-mechanics like torches needs to be lit before using them.
 
 This realism is not limited to visuals or flavor, but extends deeply into:
 
