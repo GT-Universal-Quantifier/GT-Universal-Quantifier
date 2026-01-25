@@ -5,6 +5,7 @@ GT: Universal Quantifier is a complex and realistic tech-centered survival modpa
 We are aiming for every mechanic, recipe and feature to feel grounded, justified, internally consistent and accurately realistic.
 
 > The goal is not convenience, not speed, and not power fantasy.
+
 > The goal is believability, progression, and consequence.
 
 ## Goals & Purposes
@@ -22,4 +23,5 @@ Every system should feel like it exists for a reason.
 If something happens in the game world, there should be a believable explanation rooted in real-world logic, history, or physics whenever possible.
 
 > Pack is currently in heavily work in progress. We are trying to make it playable as possible for first release.
+
 > Our Discord Server: https://discord.gg/nVgz4esBet
