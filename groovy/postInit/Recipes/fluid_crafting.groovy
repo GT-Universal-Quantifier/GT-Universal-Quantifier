@@ -1,0 +1,5 @@
+in_world_crafting.fluid_to_item.recipeBuilder()
+    .fluidInput(fluid('water'), 0.22f)
+    .input(item('gtuq:rawhide'), 1.0f)
+    .output(item('gtuq:soaked_rawhide'))
+    .register()
