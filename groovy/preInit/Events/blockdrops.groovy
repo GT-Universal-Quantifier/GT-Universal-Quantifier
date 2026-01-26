@@ -31,12 +31,10 @@ event_manager.listen { LivingDropsEvent event ->
 
     int count = world.rand.nextInt(3) + world.rand.nextInt(looting + 1)
 
-    // Remove leather
     event.drops.removeIf { drop ->
         drop.item != null && drop.item.item == Items.LEATHER
     }
 
-    // Add rawhide
     if (count > 0) {
         event.drops.add(new EntityItem(
             world,

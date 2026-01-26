@@ -11,18 +11,38 @@ content.createItem('soaked_rawhide')
     .register()
 content.createItem('dried_rawhide')
     .register()
+content.createItem('crude_knapped_stone')
+    .register()
 
-def CRUDE_STONE = EnumHelper.addToolMaterial(
-    "CRUDE_ROCK",
-    0,      // harvest level (wood)
-    32,     // durability (very low, realistic)
-    1.5f,   // mining speed (slow)
+def CRUDE_FIBER_STONE = EnumHelper.addToolMaterial(
+    "CRUDE_FIBER_ROCK",
+    0,      // harvest level
+    32,     // durability
+    1.5f,   // mining speed
     0.0f,   // attack damage
     2       // enchantability
 )
 
 content.registerItem('rock_fiber_crude_shovel',
-    new ItemSpade(CRUDE_STONE) {
+    new ItemSpade(CRUDE_FIBER_STONE) {
+        {
+            setFull3D()
+            setMaxStackSize(1)
+        }
+    }
+)
+
+def CRUDE_SOAKED_RAWHIDE_STONE = EnumHelper.addToolMaterial(
+    "CRUDE_SOAKED_RAWHIDE_ROCK",
+    0,      // harvest level
+    24,     // durability
+    1.4f,   // mining speed
+    0.0f,   // attack damage
+    2       // enchantability
+)
+
+content.registerItem('rock_soaked_rawhide_crude_shovel',
+    new ItemSpade(CRUDE_SOAKED_RAWHIDE_STONE) {
         {
             setFull3D()
             setMaxStackSize(1)

@@ -1,0 +1,2 @@
+recipes.addShaped(<gtuq:rock_fiber_crude_shovel>, [[<notreepunching:grass_fiber>,<gtuq:crude_knapped_stone>],[<ore:stickWood>,<notreepunching:grass_fiber>]]);
+recipes.addShaped(<gtuq:rock_soaked_rawhide_crude_shovel>, [[<gtuq:soaked_rawhide>,<gtuq:crude_knapped_stone>],[<ore:stickWood>,<gtuq:soaked_rawhide>]]);

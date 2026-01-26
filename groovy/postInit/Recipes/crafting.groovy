@@ -1,0 +1,1 @@
+crafting.addShapeless(item('gtuq:crude_knapped_stone'), [item('notreepunching:rock/stone'),item('notreepunching:rock/stone')])
