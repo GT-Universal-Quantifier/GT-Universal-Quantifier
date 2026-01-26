@@ -2,6 +2,35 @@ import net.minecraftforge.fml.common.gameevent.PlayerEvent
 import net.minecraftforge.event.entity.player.PlayerInteractEvent
 import net.minecraft.util.EnumHand
 import gregtech.common.items.MetaItems
+import net.minecraftforge.fml.common.gameevent.PlayerEvent
+import net.minecraft.util.SoundCategory
+import net.minecraft.init.SoundEvents
+
+event_manager.listen { PlayerEvent.ItemCraftedEvent event ->
+    def player = event.player
+    if (player == null) return
+    if (player.world.isRemote) return
+
+    def crafted = event.crafting
+    if (crafted == null) return
+
+    if (crafted.isItemEqual(item('gtuq:crude_knapped_stone'))) {
+        def n = crafted.getCount()
+        player.dropItem(item('gtuq:stone_shard') * n, false)
+
+        float volume = 0.8f
+        float pitch  = (0.9f + (player.world.rand.nextFloat() * 0.2f)) as float
+
+        player.world.playSound(
+            null,
+            player.posX, player.posY, player.posZ,
+            SoundEvents.BLOCK_STONE_HIT,
+            SoundCategory.PLAYERS,
+            volume,
+            pitch
+        )
+    }
+}
 
 event_manager.listen { PlayerInteractEvent.RightClickItem event ->
     if (event.world.isRemote) return
@@ -28,20 +57,4 @@ event_manager.listen { PlayerInteractEvent.RightClickItem event ->
     }
 
     event.canceled = true
-}
-
-
-
-
-event_manager.listen { PlayerEvent.ItemCraftedEvent event ->
-    def player = event.player
-    if (player == null) return
-
-    def crafted = event.crafting
-    if (crafted == null) return
-
-    if (crafted.isItemEqual(item('gtuq:crude_knapped_stone'))) {
-        def n = crafted.getCount()
-        player.dropItem(item('gtuq:stone_shard') * n, false)
-    }
 }
