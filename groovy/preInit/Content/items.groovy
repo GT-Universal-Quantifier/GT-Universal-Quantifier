@@ -13,6 +13,8 @@ content.createItem('dried_rawhide')
     .register()
 content.createItem('crude_knapped_stone')
     .register()
+content.createItem('antler')
+    .register()
 
 def CRUDE_FIBER_STONE = EnumHelper.addToolMaterial(
     "CRUDE_FIBER_ROCK",
