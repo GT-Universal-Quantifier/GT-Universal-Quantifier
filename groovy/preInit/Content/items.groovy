@@ -1,0 +1,8 @@
+content.createItem('stone_shard')
+    .register()
+content.createItem('rawhide')
+    .register()
+content.createItem('soaked_rawhide')
+    .register()
+content.createItem('dried_rawhide')
+    .register()

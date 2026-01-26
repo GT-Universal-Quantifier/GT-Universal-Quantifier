@@ -1,0 +1,219 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.GuiMainMenu
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  path = resources/bg.png
+  action = texturizebackground
+}
+
+customization {
+  action = setscale
+  scale = 3
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  orientation = mid-left
+  x = 5
+  action = movebutton
+  y = -15
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  width = 150
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  orientation = top-left
+  x = 5
+  action = movebutton
+  y = 190
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  width = 71
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  orientation = top-left
+  x = 5
+  action = movebutton
+  y = 215
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  width = 150
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  orientation = mid-left
+  x = 5
+  action = movebutton
+  y = -40
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  width = 150
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  orientation = top-left
+  x = 84
+  action = movebutton
+  y = 190
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  width = 71
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 106
+  width = 268
+  action = deep_customization_element:title_screen_forge_top
+  actionid = 4c7efd0c-86d4-4dda-a03f-fbe8355c594e1768673818207
+  y = 4
+  height = 19
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 2
+  width = 157
+  action = deep_customization_element:title_screen_branding
+  actionid = 258e26b7-6fa1-4b34-b3e9-bbab0742b1041768673818242
+  y = 208
+  height = 60
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 251
+  width = 228
+  action = deep_customization_element:title_screen_forge_copyright
+  actionid = 4caef40c-c6f4-43ff-b423-0d1a617d13991768673818243
+  y = 250
+  height = 9
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 423
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = c2c54068-01c9-459f-99fb-cef11953a74e1768673818243
+  y = 190
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 103
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = 2da8d72f-d995-42ef-9496-06b40008a81d1768673818243
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = original
+  splash_color = #ffff00
+  hidden = true
+  x = 0
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = f024d451-787d-486f-a0cc-fc7a2e511f7d1768673818244
+  y = 0
+  height = 30
+}
+
+customization {
+  path = 
+  orientation = top-left
+  x = 0
+  width = 0
+  actionid = 3de800bd-748d-4d72-bf0c-7518056a611b1768673869126
+  action = addtexture
+  y = 10
+  height = 100
+}
+
+customization {
+  orientation = top-left
+  delayappearanceseconds = 2.5
+  path = resources/gtuqwhite.png
+  fadein = true
+  fadeinspeed = 1.5
+  x = 29
+  width = 100
+  actionid = f7ef739d-fc8e-45f4-a7ba-691e1edf76a21768674919663
+  action = addtexture
+  y = 25
+  delayappearance = true
+  delayappearanceeverytime = false
+  height = 100
+}
+
+customization {
+  orientation = top-left
+  enable_scrolling = true
+  shadow = true
+  scale = 1.0
+  source = GTUQ [alpha]
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = 0
+  width = 200
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = 046c866d-8e63-4989-a69d-b5ea322562a01768734953288
+  y = 348
+  alignment = left
+  height = 12
+}
+
