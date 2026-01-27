@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "gtuq:items/crude_knapped_flint"
+  }
+}

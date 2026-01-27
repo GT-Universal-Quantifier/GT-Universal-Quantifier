@@ -24,7 +24,10 @@ event_manager.listen { ItemTooltipEvent event ->
     if (
         id != "gtuq:rock_fiber_crude_shovel" &&
         id != "gtuq:rock_soaked_rawhide_crude_shovel" &&
-        id != "gtuq:rock_dried_rawhide_crude_shovel"
+        id != "gtuq:rock_dried_rawhide_crude_shovel" &&
+        id != "gtuq:crude_flint_fiber_knife" &&
+        id != "gtuq:crude_flint_soaked_rawhide_knife" &&
+        id != "gtuq:crude_flint_dried_rawhide_knife"
     ) return
 
     def binding
@@ -33,6 +36,12 @@ event_manager.listen { ItemTooltipEvent event ->
     } else if (id == "gtuq:rock_soaked_rawhide_crude_shovel") {
         binding = BIND_SOAKED_HIDE
     } else if (id == "gtuq:rock_dried_rawhide_crude_shovel") {
+        binding = BIND_DRIED_HIDE
+    } else if (id == "gtuq:crude_flint_fiber_knife") {
+        binding = BIND_PLANT_FIBER
+    } else if (id == "gtuq:crude_flint_soaked_rawhide_knife") {
+        binding = BIND_SOAKED_HIDE
+    } else if (id == "gtuq:crude_flint_dried_rawhide_knife") {
         binding = BIND_DRIED_HIDE
     }
 

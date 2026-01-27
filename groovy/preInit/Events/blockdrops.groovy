@@ -3,7 +3,7 @@ import net.minecraftforge.event.entity.living.LivingDropsEvent
 import net.minecraft.block.BlockLeaves
 import gregtech.common.items.MetaItems
 import net.minecraft.entity.passive.EntityCow
-its_meow.betteranimalsplus.common.entity.EntityDeer
+import its_meow.betteranimalsplus.common.entity.EntityReindeer
 import net.minecraft.init.Items
 import net.minecraft.enchantment.EnchantmentHelper
 import net.minecraft.init.Enchantments
