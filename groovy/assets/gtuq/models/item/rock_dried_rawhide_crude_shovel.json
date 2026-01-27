@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "gtuq:items/rock_dried_rawhide_crude_shovel"
+  }
+}

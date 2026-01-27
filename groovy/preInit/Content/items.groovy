@@ -51,3 +51,21 @@ content.registerItem('rock_soaked_rawhide_crude_shovel',
         }
     }
 )
+
+def CRUDE_DRIED_RAWHIDE_STONE = EnumHelper.addToolMaterial(
+    "CRUDE_DRIED_RAWHIDE_ROCK",
+    0,      // harvest level
+    64,     // durability
+    1.6f,   // mining speed
+    0.0f,   // attack damage
+    2       // enchantability
+)
+
+content.registerItem('rock_dried_rawhide_crude_shovel',
+    new ItemSpade(CRUDE_DRIED_RAWHIDE_STONE) {
+        {
+            setFull3D()
+            setMaxStackSize(1)
+        }
+    }
+)
