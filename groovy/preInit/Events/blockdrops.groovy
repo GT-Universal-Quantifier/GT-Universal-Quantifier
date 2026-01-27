@@ -9,8 +9,8 @@ import net.minecraft.enchantment.EnchantmentHelper
 import net.minecraft.init.Enchantments
 import net.minecraft.entity.item.EntityItem
 import net.minecraft.util.math.MathHelper
-import net.minecraft.item.Item
 import net.minecraft.item.ItemStack
+import net.minecraft.item.Item
 import groovy.transform.Field
 
 event_manager.listen { HarvestDropsEvent event ->
