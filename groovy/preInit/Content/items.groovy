@@ -24,6 +24,8 @@ content.createItem('antler_piece')
     .register()
 content.createItem('soaked_antler_piece')
     .register()
+content.createItem('flint_knife_head')
+    .register()
 
 
 def CRUDE_FIBER_STONE_SPADE = EnumHelper.addToolMaterial(

@@ -54,12 +54,6 @@ event_manager.listen { LivingDropsEvent event ->
     ItemStack rh  = (rawhideCount > 0) ? stackFromId("gtuq:rawhide", rawhideCount) : ItemStack.EMPTY
     ItemStack ant = (antlerCount  > 0) ? stackFromId("betteranimalsplus:antler",  antlerCount)  : ItemStack.EMPTY
 
-    if (!printedMissing) {
-        if (rawhideCount > 0 && (rh == null || rh.isEmpty()))  println("[GTUQ] ERROR: Can't find item id gtuq:rawhide in registry!")
-        if (antlerCount  > 0 && (ant == null || ant.isEmpty())) println("[GTUQ] ERROR: Can't find item id gtuq:antler in registry!")
-        printedMissing = true
-    }
-
     if (rh != null && !rh.isEmpty()) {
         event.drops.add(new EntityItem(world, ent.posX, ent.posY, ent.posZ, rh))
     }
@@ -91,11 +85,6 @@ event_manager.listen { LivingDropsEvent event ->
     event.drops.removeIf { drop -> drop?.item != null && drop.item.item == Items.LEATHER }
 
     ItemStack rh  = (rawhideCount > 0) ? stackFromId("gtuq:rawhide", rawhideCount) : ItemStack.EMPTY
-
-    if (!printedMissing) {
-        if (rawhideCount > 0 && (rh == null || rh.isEmpty()))  println("[GTUQ] ERROR: Can't find item id gtuq:rawhide in registry!")
-        printedMissing = true
-    }
 
     if (rh != null && !rh.isEmpty()) {
         event.drops.add(new EntityItem(world, ent.posX, ent.posY, ent.posZ, rh))

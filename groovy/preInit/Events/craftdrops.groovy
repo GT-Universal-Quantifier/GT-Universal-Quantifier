@@ -110,6 +110,32 @@ event_manager.listen { PlayerEvent.ItemCraftedEvent event ->
     }
 }
 
+event_manager.listen { PlayerEvent.ItemCraftedEvent event ->
+    def player = event.player
+    if (player == null) return
+    if (player.world.isRemote) return
+
+    def crafted = event.crafting
+    if (crafted == null) return
+
+    if (crafted.isItemEqual(item('gtuq:crude_soaked_antler_billet'))) {
+        def n = crafted.getCount()
+        player.dropItem(item('gtuq:soaked_antler_piece') * n, false)
+
+        float volume = 0.8f
+        float pitch  = (0.9f + (player.world.rand.nextFloat() * 0.2f)) as float
+
+        player.world.playSound(
+            null,
+            player.posX, player.posY, player.posZ,
+            SoundEvents.ENTITY_SHEEP_SHEAR,
+            SoundCategory.PLAYERS,
+            volume,
+            pitch
+        )
+    }
+}
+
 event_manager.listen { PlayerInteractEvent.RightClickItem event ->
     if (event.world.isRemote) return
     if (event.hand != EnumHand.MAIN_HAND) return
